@@ -1,1 +1,16 @@
 /* Here is our css file */
+
+#resultsDiv {
+    box-sizing: border-box;
+    border: solid 2px;
+    height: 200px;
+
+}
+
+#mapIMG {
+    box-sizing: border-box;
+    border: solid 2px;
+
+    height: 800px;
+
+}
