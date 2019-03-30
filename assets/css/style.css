@@ -1,0 +1,23 @@
+/* Here is our css file */
+
+/*homepage styling */
+.background-wrap{
+    position: fixed;
+    z-index: -1000;
+    width: 105%;
+    height: 105%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+#video-bg-elem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 120%;
+    max-height: 120%;
+}
+
+/*end of homepage styling */
