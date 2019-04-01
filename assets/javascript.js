@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    event.preventDefault();
+  
       console.log( "ready!" );
-  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AlzaSyDLPVgCgH_W_SZTklXhTP8irhCfdzB90wk';
+  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AIzaSyD1ssjIjCr991MdlbLX8ME5ha0SRhKK_1w';
   
       $.ajax({
         url: queryURL, 
@@ -21,7 +21,7 @@ $(document).ready(function() {
     var options = {
         zoom: 8, // starting zoom of map
         center:{lat:42.3601, lng:-71.0589} // boston need to change to input of search
-    }
+    };
         // New Map
     var map = new
     google.maps.Map(document.getElementById('#map'),options);
