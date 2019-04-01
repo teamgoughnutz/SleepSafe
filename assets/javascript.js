@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
       console.log( "ready!" );
-  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AlzaSyDLPVgCgH_W_SZTklXhTP8irhCfdzB90wk';
+  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU';
   
       $.ajax({
         url: queryURL, 
@@ -31,4 +31,6 @@ $(document).ready(function() {
         position:{lat:42.4668, lng:-70.9495},
         map:map,
     });
+    console.log(initMap);
+    
   }
