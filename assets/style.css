@@ -3,19 +3,14 @@
 #resultsDiv {
     box-sizing: border-box;
     border: solid 2px;
-    height: 200px;
+    
     background-color: #5d5c61;
     
 
 }
 
-#map1 {
-    box-sizing: border-box;
-    border: solid 2px;
-    background-color: #5d5c61;
-    height: 800px;
 
-}
+
 
 #button1 {
     background-color:#557A95;

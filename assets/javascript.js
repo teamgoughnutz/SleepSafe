@@ -10,21 +10,24 @@ $(document).ready(function() {
           console.log(response);
         }
     });
+
+
+});
   
    
-  });
+ 
   
   
-   
-  function initMap(){
+
+
+  var initMap = function(){
     // Map options
     var options = {
         zoom: 8, // starting zoom of map
         center:{lat:42.3601, lng:-71.0589} // boston need to change to input of search
     };
         // New Map
-    var map = new
-    google.maps.Map(document.getElementById('#map'),options);
+    var map = new google.maps.Map(document.getElementById('map'),options);
   
     // add marker
     var marker = new google.maps.Marker({
@@ -33,4 +36,4 @@ $(document).ready(function() {
     });
     console.log(initMap);
     
-  }
+  };
