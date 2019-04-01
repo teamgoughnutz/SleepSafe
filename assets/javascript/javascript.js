@@ -10,7 +10,15 @@ var config = {
   };
   firebase.initializeApp(config);
 var database = firebase.database();
+database.ref().on("value", function(snapshot){
 
+    if (snapshot.child("city").exists()) {
+        city = snapshot.val().city;
+        console.log(city);
+
+    }
+    
+});
 var city = "";
 
 
@@ -18,6 +26,8 @@ var city = "";
       city = snapshot.val().clicks;
 
   });
+
+  
  
   
 // navbar slides down
@@ -36,9 +46,13 @@ $(".searchButtons").on("click", function(){
 localStorage.clear();
 
 localStorage.setItem("userSearch", city);
+var array = ["code","yeti","sponage bob"];
+database.ref().update({
+    city: {
+        name: city,
+        articles: array
 
-database.ref().set({
-    city: city
+    }
 });
 });
 
