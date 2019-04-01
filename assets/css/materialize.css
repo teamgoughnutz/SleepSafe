@@ -6022,7 +6022,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .chips .input:focus {
-  border: 0 !important;
+  border: 0 ;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -8154,7 +8154,7 @@ input[type=range]::-ms-thumb {
   /* STROKEWIDTH */
   border-style: solid;
   border-color: inherit;
-  border-bottom-color: transparent !important;
+  border-bottom-color: transparent ;
   border-radius: 50%;
   -webkit-animation: none;
   animation: none;
