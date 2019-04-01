@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
       console.log( "ready!" );
-  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AIzaSyD1ssjIjCr991MdlbLX8ME5ha0SRhKK_1w';
+  var queryURL = 'https://maps.googleapis.com/maps/api/geocode/json?address=UK&key=AIzaSyCvFr5c_8XDQMiVbPSyK1VGQ1hdwKXcTvU';
   
       $.ajax({
         url: queryURL, 
