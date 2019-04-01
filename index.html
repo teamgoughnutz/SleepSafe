@@ -13,15 +13,12 @@
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
         #map {
-          height: 425px;
+            height: 425px;
+            width: 70%;
+            float: left;
+
         }
-        /* Optional: Makes the sample page fill the window. */
-        html, body {
-          height: 100%;
-          margin: 0;
-          padding: 0;
-        }
-      </style>
+    </style>
 
 </head>
 
@@ -42,41 +39,39 @@
     <div class="row">
 
         <div class="col s3 left" id="resultsDiv">
-
-
-
         </div>
-
-        <div class="col s9 left" id="map1">
-    </div>
- </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div id="map"></div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 33.6846, lng: -117.8265},
-          zoom: 8
-        });
-      }
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 33.6846, lng: -117.8265 },
+                zoom: 8
+            });
+        }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
-    async defer></script>
+        async defer></script>
 
 
 
@@ -86,7 +81,8 @@
     <script src="js/materialize.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="assets/javascript.js"></script>
-    <script √src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap" async defer ></script>
+    <script √src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
+        async defer></script>
 
 </body>
 
