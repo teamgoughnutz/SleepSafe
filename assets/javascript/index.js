@@ -16,7 +16,7 @@ database.ref().on("value", function (snapshot) {
 
     if (snapshot.child("city").exists()) {
         city = snapshot.val().city;
-        console.log(city);
+       
 
     }
 
