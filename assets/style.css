@@ -1,0 +1,34 @@
+/* Here is our css file */
+
+#resultsDiv {
+    box-sizing: border-box;
+    border: solid 2px;
+    
+    background-color: #5d5c61;
+    
+
+}
+body {
+    background-image: url(../assets/images/overhead_city.jpg);
+
+}
+
+#map {
+    position: absolute;
+    top: 68px;
+    right: 3px;
+}
+
+
+
+
+#button1 {
+    background-color:#557A95;
+
+
+}
+.nav-wrapper{
+    background-color: #5d5c61;
+
+
+}

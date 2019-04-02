@@ -1,0 +1,79 @@
+/* Here is our css file */
+
+/*homepage styling */
+    /* background*/
+.background-wrap{
+    position: fixed;
+    z-index: -1000;
+    width: 105%;
+    height: 105%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+#video-bg-elem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 120%;
+    max-height: 120%;
+}
+    /* end of background*/
+    /*search bar*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    body{
+      background: #f2f2f2;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .searchs {
+      width: 100%;
+      position: relative
+    }
+    
+    .searchTerms {
+      float: left;
+      width: 100%;
+      border: 3px solid #00B4CC;
+      padding: 5px;
+      height: 20px;
+      border-radius: 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+    
+    .searchTerms:focus{
+      color: #00B4CC;
+    }
+    
+    .searchButtons {
+      position: absolute;  
+      right: -50px;
+      width: 40px;
+      height: 36px;
+      border: 1px solid #00B4CC;
+      background: #00B4CC;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    
+    /*Resize the wrap to see the search bar change!*/
+    .wrap1{
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* end of search bar*/
+
+    
+
+/*end of homepage styling */
