@@ -1,34 +1,40 @@
 /* Here is our css file */
 
 #resultsDiv {
-    box-sizing: border-box;
-    border: solid 2px;
-    
-    background-color: #5d5c61;
-    
+  box-sizing: border-box;
+  border: solid 2px;
+  
+  background-color: #5d5c61;
+  
 
 }
 body {
-    background-image: url(../assets/images/overhead_city.jpg);
+  background-image: url(../assets/images/Screen\ Shot\ 2019-04-02\ at\ 9.58.56\ AM.png);
+  background-size: 80%;
+  
+
+}
 
 }
 
 #map {
-    position: absolute;
-    top: 68px;
-    right: 3px;
+  position: absolute;
+  top: 68px;
+  right: 3px;
 }
 
 
 
 
 #button1 {
-    background-color:#557A95;
+  background-color:#557A95;
 
 
 }
 .nav-wrapper{
-    background-color: #5d5c61;
+  background-color: #5d5c61;
 
 
 }
+  
+    
