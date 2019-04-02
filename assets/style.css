@@ -10,7 +10,13 @@
 }
 body {
     background-image: url(../assets/images/overhead_city.jpg);
-    
+
+}
+
+#map {
+    position: absolute;
+    top: 68px;
+    right: 3px;
 }
 
 
