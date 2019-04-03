@@ -1,6 +1,6 @@
 // navbar slides down
 $(window).on("load", function () {
-    $('.navbar').slideDown();
+    $('.navbar').slideDown(800);
 });
 var city = "";
 // grabs the input from user in the search bar
