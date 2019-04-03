@@ -3,7 +3,7 @@
 #resultsDiv {
   box-sizing: border-box;
   border: solid 2px;
-  
+  word-wrap: inherit;
   background-color: #5d5c61;
   
 
@@ -32,6 +32,10 @@ body {
 }
 nav{
   background-color: transparent !important;
+
 }
+
+
+
   
     
