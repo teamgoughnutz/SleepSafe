@@ -5,15 +5,16 @@ function buildQueryURL() {
     var authKey = { "api-key": "MxuEsc7MF40JovGDK4Q2Zx19DQ3S7iEe" };
 
     // user input added to search
-    authKey.q = $("#search-term")
-        .val()
-        .trim();
+    
+    authKey.q = localStorage.getItem("userSearch");
+
 
     // write url to console log to test 
     console.log("---------------\nURL: " + queryURL + "\n---------------");
     console.log(queryURL + $.param(authKey));
     return queryURL + $.param(authKey);
 }
+
 
 function updatePage(NYTData) {
 
@@ -22,7 +23,8 @@ function updatePage(NYTData) {
     // print to console to test
     console.log(NYTData);
 
-    for (var i = 0; i < numArticles; i++) {
+    //need to change code to have list append to whatever html is on the second page 
+        for (var i = 0; i < numArticles; i++) {
         var article = NYTData.response.docs[i];
 
         var articleCount = i + 1;
@@ -30,7 +32,7 @@ function updatePage(NYTData) {
         var $articleList = $("<ul>");
         $articleList.addClass("list-group");
 
-        $("#article-section").append($articleList);
+        $("#resultsDiv").append($articleList);
 
         // headline
         var headline = article.headline;
@@ -52,7 +54,7 @@ function updatePage(NYTData) {
         var section = article.section_name;
         console.log(article.section_name);
         if (section) {
-            $articleListItem.append("<h5>Section: " + section + "</h5>");
+            $articleListItem.append("<h8>Section: " + section + "</h8>");
         }
 
         // date of publication
@@ -68,16 +70,18 @@ function updatePage(NYTData) {
 
         // append article
         $articleList.append($articleListItem);
+
+        localStorage.getItem("userSearch");
+        console.log("userSearch");
+        
     }
 }
 
 // clear articles
 function clear() {
-    $("#article-section").empty();
+    $("#resultsDiv").empty();
 }
-
-$("#run-search").on("click", function (event) {
-    event.preventDefault();
+ 
 
     clear();
 
@@ -87,5 +91,5 @@ $("#run-search").on("click", function (event) {
         url: queryURL,
         method: "GET"
     }).then(updatePage);
-});
+
 
