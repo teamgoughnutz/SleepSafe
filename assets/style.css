@@ -3,7 +3,9 @@
 #resultsDiv {
   box-sizing: border-box;
   border: solid 2px;
+  word-wrap: break-word;
   background-color: #5d5c61;
+
 }
 
 body {
@@ -19,9 +21,11 @@ body {
 
 #button1 {
   background-color:#557A95;
+
 }
-.nav-wrapper{
-  background-color: #5d5c61;
+nav{
+  background-color: transparent !important;
 }
+
   
     
