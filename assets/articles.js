@@ -23,7 +23,7 @@ function updatePage(NYTData) {
     // print to console to test
     console.log(NYTData);
 
-    //need to change code to have list append to whatever html is on the second page 
+    
         for (var i = 0; i < numArticles; i++) {
         var article = NYTData.response.docs[i];
 
