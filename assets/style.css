@@ -30,10 +30,8 @@ body {
 
 
 }
-.nav-wrapper{
-  background-color: #5d5c61;
-
-
+nav{
+  background-color: transparent !important;
 }
   
     
