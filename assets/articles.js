@@ -18,17 +18,12 @@ function buildQueryURL() {
 
 function updatePage(NYTData) {
 
-    var numArticles = 5
+    var numArticles = 5;
 
     // print to console to test
     console.log(NYTData);
 
-<<<<<<< HEAD
     for (var i = 0; i < numArticles; i++) {
-=======
-    
-        for (var i = 0; i < numArticles; i++) {
->>>>>>> cris
         var article = NYTData.response.docs[i];
 
         var articleCount = i + 1;
@@ -62,7 +57,7 @@ function updatePage(NYTData) {
         }
 
         // append and log url
-        $articleListItem.append("<a href='" + article.web_url + "'>" + article.web_url + "</a>");
+        $articleListItem.append("<a href='" + article.web_url + "'>" + "Click for Article" +"</a>");
         console.log(article.web_url);
 
         // append article
