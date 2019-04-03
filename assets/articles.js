@@ -18,7 +18,7 @@ function buildQueryURL() {
 
 function updatePage(NYTData) {
 
-    var numArticles = 5
+    var numArticles = 5;
 
     // print to console to test
     console.log(NYTData);
@@ -57,7 +57,7 @@ function updatePage(NYTData) {
         }
 
         // append and log url
-        $articleListItem.append("<a href='" + article.web_url + "'>" + article.web_url + "</a>");
+        $articleListItem.append("<a href='" + article.web_url + "'>" + "Click for Article" +"</a>");
         console.log(article.web_url);
 
         // append article
