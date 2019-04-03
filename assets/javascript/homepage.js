@@ -7,8 +7,6 @@ var city = "";
 $(".searchButtons").on("click", function () {
     city = $(".searchTerms").val().trim();
 
-    
-    
     // logs search value to the console
     console.log(city);
 

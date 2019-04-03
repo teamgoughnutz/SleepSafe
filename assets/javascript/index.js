@@ -44,10 +44,6 @@ $(window).on("load", function () {
 //  $(".searchButtons").on("click", function () {
 //      city = $(".searchTerms").val().trim();
      
-
-    
-
-    
      
 //      // logs search value to the console
 //      $(".searchTerms").val(city);
