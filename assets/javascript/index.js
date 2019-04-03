@@ -22,7 +22,7 @@ database.ref().on("value", function (snapshot) {
 
 });
 var city = "";
-//geocoder
+
 
 
 firebase.database().ref().on("value", function (snapshot) {
@@ -40,31 +40,31 @@ firebase.database().ref().on("value", function (snapshot) {
 $(window).on("load", function () {
     $('.navbar').slideDown();
 });
-// grabs the input from user in the search bar
-//  $(".searchButtons").on("click", function () {
-//      city = $(".searchTerms").val().trim();
+//grabs the input from user in the search bar
+ $(".searchButtons").on("click", function () {
+     city = $(".searchTerms").val().trim();
      
 
     
 
     
      
-//      // logs search value to the console
-//      $(".searchTerms").val(city);
-//      console.log(city);
+     // logs search value to the console
+     $(".searchTerms").val(city);
+     console.log(city);
 
-//      // add to local storage
-//      localStorage.clear();
+     // add to local storage
+     localStorage.clear();
 
-//      localStorage.setItem("userSearch", city);
-//      // updates to firebase
-//      var array = ["code", "yeti", "sponage bob"];
-//      database.ref().update({
-//          city: {
-//              name: city,
-//             articles: array
+     localStorage.setItem("userSearch", city);
+     // updates to firebase
+     var array = ["code", "yeti", "sponage bob"];
+     database.ref().push({
+         city: {
+             name: city,
+            articles: array
 
-//          }
-//      });
-//  });
+         }
+     });
+ });
 
