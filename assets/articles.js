@@ -5,7 +5,7 @@ function buildQueryURL() {
     var authKey = { "api-key": "MxuEsc7MF40JovGDK4Q2Zx19DQ3S7iEe" };
 
     // user input added to search
-    
+
     authKey.q = localStorage.getItem("userSearch");
 
 
@@ -23,8 +23,7 @@ function updatePage(NYTData) {
     // print to console to test
     console.log(NYTData);
 
-    //need to change code to have list append to whatever html is on the second page 
-        for (var i = 0; i < numArticles; i++) {
+    for (var i = 0; i < numArticles; i++) {
         var article = NYTData.response.docs[i];
 
         var articleCount = i + 1;
@@ -42,11 +41,11 @@ function updatePage(NYTData) {
             console.log(headline.main);
             $articleListItem.append(
                 "<span class='label label-primary'>" +
-                articleCount +
+                articleCount + "." +
                 "</span>" +
-                "<strong> " +
+                "<b> " +
                 headline.main +
-                "</strong>"
+                "</b>"
             );
         }
 
@@ -54,14 +53,7 @@ function updatePage(NYTData) {
         var section = article.section_name;
         console.log(article.section_name);
         if (section) {
-            $articleListItem.append("<h8>Section: " + section + "</h8>");
-        }
-
-        // date of publication
-        var pubDate = article.pub_date;
-        console.log(article.pub_date);
-        if (pubDate) {
-            $articleListItem.append("<h5>" + article.pub_date + "</h5>");
+            $articleListItem.append("<h6>Section: " + section + "</h6>");
         }
 
         // append and log url
@@ -73,7 +65,7 @@ function updatePage(NYTData) {
 
         localStorage.getItem("userSearch");
         console.log("userSearch");
-        
+
     }
 }
 
@@ -81,15 +73,14 @@ function updatePage(NYTData) {
 function clear() {
     $("#resultsDiv").empty();
 }
- 
 
-    clear();
+clear();
 
-    var queryURL = buildQueryURL();
+var queryURL = buildQueryURL();
 
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(updatePage);
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(updatePage);
 
 
