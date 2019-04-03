@@ -11,6 +11,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
     <style>
         /* This is the map size of our google map */
+
         #map {
             height: 425px;
             width: 70%;
@@ -23,14 +24,14 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">CitySearch</a>
-
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#"></a>Search Results</li>
+                    <li>
+                        <a href="#"></a>Search Results</li>
                 </ul>
             </div>
         </nav>
     </div>
-                <!--  This is the results -->
+    <!--  This is the results -->
     <div class="row">
         <div class="col s3 left" id="resultsDiv">
         </div>
@@ -41,23 +42,7 @@
     <div id="attributions"></div>
 
 
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
+    <script>
         var map;
         function initMap() {
             var search = localStorage.getItem('userSearch');
@@ -76,14 +61,14 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap&libraries=places"
         async defer></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <script src="js/materialize.js"></script>
     <script src="assets/javascript.js"></script>
     <script src="assets/javascript/index.js"></script>
-    <script √src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
-        async defer></script>
-       
+    <script √src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap" async
+        defer></script>
+
 </body>
+
 </html>
