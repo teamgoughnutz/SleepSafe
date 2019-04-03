@@ -30,7 +30,7 @@
                 <a href="#!" class="brand-logo">CitySearch</a>
 
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#"></a></li>
+                    <li><a href="#"></a>Search Results</li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +63,7 @@
                 console.log(placeResults);
                 map = new google.maps.Map(document.getElementById('map'), {
                     center: { lat: placeResults[0].geometry.location.lat(), lng: placeResults[0].geometry.location.lng() },
-                    zoom: 12
+                    zoom: 8
                 });
             });
         }
@@ -82,8 +82,8 @@
     <script src="assets/javascript.js"></script>
     <script src="assets/javascript/index.js"></script>
     <script src="assets/articles.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
-        async defer></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
+        async defer></script>
 
 </body>
 
