@@ -3,16 +3,13 @@
 #resultsDiv {
   box-sizing: border-box;
   border: solid 2px;
-  
-  background-color: #5d5c61;
-  
+  word-wrap: break-word;
+  background-color: #5d5c61;ß
 
 }
 body {
   background-image: url(../assets/images/Screen\ Shot\ 2019-04-02\ at\ 9.58.56\ AM.png);
   background-size: 80%;
-  
-
 
 }
 
@@ -22,18 +19,13 @@ body {
   right: 3px;
 }
 
-
-
-
 #button1 {
   background-color:#557A95;
 
-
 }
-.nav-wrapper{
-  background-color: #5d5c61;
-
-
+nav{
+  background-color: transparent !important;
 }
+
   
     
