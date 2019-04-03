@@ -23,12 +23,7 @@ function updatePage(NYTData) {
     // print to console to test
     console.log(NYTData);
 
-<<<<<<< HEAD
     for (var i = 0; i < numArticles; i++) {
-=======
-    
-        for (var i = 0; i < numArticles; i++) {
->>>>>>> cris
         var article = NYTData.response.docs[i];
 
         var articleCount = i + 1;
