@@ -10,24 +10,28 @@ firebase.database().ref().on("value", function (snapshot) {
 });
 
 
- // links to homepage 
- $(".brand-logo").on("click", function(){
-    window.location.href = 'homepage.html';
-});
-
 // navbar slides down
 $(window).on("load", function () {
     $('.navbar').slideDown();
+    
+    
+  
 });
+
+  // links to homepage 
+  $(".brand-logo").on("click", function () {
+    window.location.href = "homepage.html";
+}); 
+
 // //grabs the input from user in the search bar
 //  $(".searchButtons").on("click", function () {
 //      city = $(".searchTerms").val().trim();
-     
 
-    
 
-    
-     
+
+
+
+
 //      // logs search value to the console
 //      $(".searchTerms").val(city);
 //      console.log(city);
