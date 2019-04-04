@@ -80,7 +80,21 @@
       margin-left: 3px;
     }
 .search-display{
-  color: aqua;
+  color: lightgrey;
+  -webkit-text-stroke: .5px ghostwhite;
   border: 1px solid black;
+}
+
+a:link{
+  color: aqua; 
+  
+}
+a:hover {
+  color: dimgray;
+
+}
+a {
+  text-shadow: 2px 3px black;
+
 }
 /*end of homepage styling */
