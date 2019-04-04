@@ -74,6 +74,13 @@
 
     /* end of search bar*/
 
-    
-
+    /* previous button */
+    .previous-search-button {
+      float: left;
+      margin-left: 3px;
+    }
+.search-display{
+  color: aqua;
+  border: 1px solid black;
+}
 /*end of homepage styling */
