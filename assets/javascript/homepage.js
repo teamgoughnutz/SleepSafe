@@ -111,5 +111,5 @@ $("#search-form").on("submit", function (event) {
     localStorage.setItem("userSearch", city);
 
     // moves user to index page
-    window.location.href = 'index.html';
+    window.location.href = 'searchResults.html';
 });
