@@ -72,14 +72,10 @@ firebase.database().ref().limitToLast(5).on("value", function (snapshot) {
             }
 
             // date of publication
-            var pubDate = article.pub_date;
-            console.log(article.pub_date);
-            if (pubDate) {
-                $articleListItem.append("<h5>" + article.pub_date + "</h5>");
-            }
+           
 
             // append and log url
-            $articleListItem.append("<a href='" + article.web_url + "'>" + article.web_url + "</a>");
+            $articleListItem.append("<a href='" + article.web_url + "'>" + "Click for article" + "</a>");
             console.log(article.web_url);
 
             // append article
