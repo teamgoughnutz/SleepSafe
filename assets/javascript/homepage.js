@@ -4,10 +4,11 @@ $(window).on("load", function () {
 });
 var city = "";
 // grabs the input from user in the search bar
-$("#search-form").on("submit", function (event) {
-    event.preventDefault();
+$(".searchButtons").on("click", function () {
     city = $(".searchTerms").val().trim();
 
+    
+    
     // logs search value to the console
     console.log(city);
 
