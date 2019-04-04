@@ -20,7 +20,7 @@ $(window).on("load", function () {
 
   // links to homepage 
   $(".brand-logo").on("click", function () {
-    window.location.href = "homepage.html";
+    window.location.href = "searchResults.html";
 }); 
 
 // //grabs the input from user in the search bar

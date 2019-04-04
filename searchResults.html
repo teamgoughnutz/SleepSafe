@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CitySearch</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 425px;
+            width: 66%;
+            float: left;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">CitySearch</a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+
+        <div class="col s4 left" id="resultsDiv">
+        
+        </div>
+
+
+        <div id="map"></div>
+
+    </div>
+
+    <div id="attributions"></div>
+
+    </div>
+
+    <script>
+        var map;
+        function initMap() {
+            var search = localStorage.getItem('userSearch');
+            var placeService = new google.maps.places.PlacesService(document.getElementById('attributions'));
+            placeService.findPlaceFromQuery({
+                fields: ['geometry.location'],
+                query: search
+            }, function (placeResults, status) {
+                console.log(placeResults);
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: placeResults[0].geometry.location.lat(), lng: placeResults[0].geometry.location.lng() },
+                    zoom: 12
+                });
+            });
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap&libraries=places"
+        async defer></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="js/materialize.js"></script>
+    <script src="assets/javascript.js"></script>
+    <script src="assets/javascript/index.js"></script>
+    <script src="assets/articles.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGCcbAi-00_5G6Sjw2Amnt0sl-5ndTKsU&callback=initMap"
+        async defer></script> -->
+
+</body>
+
+</html>
