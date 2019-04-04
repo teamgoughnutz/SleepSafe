@@ -1,1 +1,55 @@
 /* Here is our css file */
+
+#resultsDiv {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: transparent;
+  font-weight: bold;
+  color: ghostwhite;
+
+
+}
+body {
+  background-image: url(../assets/images/pexels-photo-531880.jpeg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  
+
+}
+
+#map {
+  position: absolute;
+  top: 68px;
+  right: 3px;
+  border: inset 3px;
+  border: outset 3px;
+ 
+
+
+}
+
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+}
+.brand-logo{
+  text-shadow: 2px 2px black;
+
+}
+a:link{
+  color: aqua; 
+  
+}
+a:hover {
+  color: dimgray;
+
+}
+a {
+  text-shadow: 2px 3px black;
+
+}
+
+
+  
+    
