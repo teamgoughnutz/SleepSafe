@@ -1,3 +1,14 @@
+//firebase database
+var config = {
+    apiKey: "AIzaSyAyc2X_c36dZ7S1vqFwCbDFIggL6qr9yuM",
+    authDomain: "sleepsafe-6c621.firebaseapp.com",
+    databaseURL: "https://sleepsafe-6c621.firebaseio.com",
+    projectId: "sleepsafe-6c621",
+    storageBucket: "sleepsafe-6c621.appspot.com",
+    messagingSenderId: "616346102752"
+};
+firebase.initializeApp(config);
+var database = firebase.database();
 // sleepsafe/citysearch
 
 function buildQueryURL() {
@@ -22,7 +33,12 @@ function updatePage(NYTData) {
 
     // print to console to test
     console.log(NYTData);
-
+    console.log(NYTData.response.docs);
+     database.ref().push({
+        name:  localStorage.getItem("userSearch"),
+        articles: NYTData.response.docs
+     });
+    //need to change code to have list append to whatever html is on the second page 
     for (var i = 0; i < numArticles; i++) {
         var article = NYTData.response.docs[i];
 
